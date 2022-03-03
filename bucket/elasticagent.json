@@ -12,9 +12,12 @@
             "hash": "e1730c16f2ab0fd9d175592e9475d081f6f2e1fee60866f30f24fa8df19d00cf",
             "extract_dir": "elastic-agent-8.0.0-windows-x86_64",
            
-            "post_install": [
-              "$(dir)/elastic-agent.exe --help"
-            ]
+            "installer": {
+                "script": "& \"$dir\\elastic-agent.exe\" \"install\" \"--url\" \"$env:ELASTIC_ENROLLMENT_URL\" \"-t\" \"$env:ELASTIC_ENROLLMENT_TOKEN\" \"-f\""
+            },
+            "uninstaller": {
+               "script": "& \"C:\\Program Files\\Elastic\\Agent\\elastic-agent.exe\" \"uninstall\" \"-f\""
+            }
         }
     }
 }
