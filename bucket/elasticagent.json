@@ -9,18 +9,12 @@
     "architecture": {
         "64bit": {
             "url": "https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.0.0-windows-x86_64.zip",
-            "hash": "e1730c16f2ab0fd9d175592e9475d081f6f2e1fee60866f30f24fa8df19d00cf"
-        },
-    "extract_dir": "elastic-agent-8.0.0-windows-x86_64",
-    "installer": {
-        "script": [
-            ".\\elastic-agent.exe install --url=$env:ELASTIC_ENROLLMENT_URL --enrollment-token=$env:ELASTIC_ENROLLMENT_TOKEN"
-        ]
-    },
-    "uninstaller": {
-        "script": [
-            ".\\elast-agent.exe uninstall"
-        ]
+            "hash": "e1730c16f2ab0fd9d175592e9475d081f6f2e1fee60866f30f24fa8df19d00cf",
+            "extract_dir": "elastic-agent-8.0.0-windows-x86_64",
+           
+            "post_install": [
+              "$(dir)/elastic-agent.exe --help"
+            ]
+        }
     }
-  }
 }
