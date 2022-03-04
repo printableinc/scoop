@@ -12,11 +12,11 @@
             "hash": "a70b790dcf7ee4a0cae65fb82a16fb67fe970eb21b9424c9da35e1acafbc4348",
            
             "installer": {
-                "script": "& \"$dir\\ndp471-devpack-enu.exe\" \"/q\" \"/norestart\" \"/log\" \"D:\\Temp\\DotNET471-Install.log\"\""
+                "script": "& \"$dir\\ndp471-devpack-enu.exe\" \"/q\"  \"/log\" \"$env:TEMP\\dotnetlog.txt\""
 
             },
             "uninstaller": {
-               "script": "& \"$dir\\ndp471-devpack-enu.exe\" \"/uninstall\" \"/q\" \"/norestart\"\""
+               "script": "& \"$dir\\ndp471-devpack-enu.exe\" \"/uninstall\" \"/q\" "
             }
         }
     }
