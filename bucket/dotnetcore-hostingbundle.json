@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.visualstudio.microsoft.com/download/pr/5adf4f36-aff5-447f-99db-86eae913d4eb/b71f76ea31156438499da1d419c577ff/dotnet-hosting-5.0.14-win.exe",
-            "hash": "9af148ffb81cacab298798772f11882e9f107d7c40fbcd39e23311cb24541e951cc5640fed2e69e8e5eab3db126f5bf6011fec2b359c42982dda6e188fee6d92",
+            "hash": "efcb2a8e3f32daa4a6724c61db93bfe5b4fc0ca4baf0cff0cb67e42f994c6e65",
            
             "installer": {
                 "script": "& \"$dir\\dotnet-hosting-5.0.14-win.exe\" \"/install\" \"/quiet\" \"/norestart\" "
