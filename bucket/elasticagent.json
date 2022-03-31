@@ -8,7 +8,7 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.0.0-windows-x86_64.zip",
+            "url": "https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.1.1-windows-x86_64.zip",
             "hash": "sha512:9a071f27f6bc4c2837f6bc71d27732178b75b9f4216909942fa3b2857a506f14680472700f65bbd40f7b303cac7d1c8463b461c92ae898d2e64332a30536c7f4",
             "extract_dir": "elastic-agent-8.1.1-windows-x86_64",
            
